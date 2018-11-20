@@ -1,6 +1,6 @@
 const fetch = require("node-fetch")
 
-module.exports.getTimetable = async function (busStop) {
+module.exports.getTimetable = async function () {
 
 
   const postData = `

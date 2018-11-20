@@ -8,11 +8,12 @@
             "Alexa open bus driver",
             "Alexa ask bus driver for timetables"
           ],
-          "name": "Helsinki Bus Timetables",
+          "name": "helsinki-bus-timetables",
           "description": "Helsinki public transportation bus timetables"
         }
       },
       "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
       "category": "PUBLIC_TRANSPORTATION",
       "distributionCountries": []
     },

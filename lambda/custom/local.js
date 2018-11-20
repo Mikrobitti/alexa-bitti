@@ -1,7 +1,7 @@
-const timetableFunctions = require ('./handleNewTimetableRequest.js') 
+const timetableFunction = require ('./getTimetable') 
 
 const local = async () => {
-    const returnValue = await timetableFunctions.handleNewTimetableRequest()
+    const returnValue = await timetableFunction.getTimetable()
     console.log('returnValue: ', returnValue)
 }
 

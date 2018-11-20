@@ -1,5 +1,6 @@
 const Alexa = require('ask-sdk-core');
 const timetableFunction = require('./getTimetable.js')
+
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
@@ -23,7 +24,7 @@ const TimetableIntentHandler = {
   async handle(handlerInput) {
     const response = await timetableFunction.getTimetable()
     return handlerInput.responseBuilder
-      .speak(response)
+      .speak(response === "" ? "There are no busses leaving within the hour" : response)
       .withSimpleCard('Helsinki Bus Timetables', response)
       .getResponse();
   },
