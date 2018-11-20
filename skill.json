@@ -8,7 +8,7 @@
             "Alexa open bus driver",
             "Alexa ask bus driver for timetables"
           ],
-          "name": "Helsinki bus timetables",
+          "name": "Helsinki Bus Timetables",
           "description": "Helsinki public transportation bus timetables"
         }
       },

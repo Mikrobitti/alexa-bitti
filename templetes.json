@@ -1,5 +1,5 @@
 {
-    "Buttons ColorChanger": {
-        "gitUrl": "https://github.com/alexa/skill-sample-nodejs-buttons-colorchanger.git"
+    "Helsinki Bus Timetables": {
+        "gitUrl": "https://gitlab.com/Qant/alexa-bitti.git"
     }
 }
