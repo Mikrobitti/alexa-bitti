@@ -1,0 +1,35 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+  {
+    "Effect": "Allow",
+    "Action": [
+      "iam:CreateRole",
+      "iam:GetRole",
+      "iam:AttachRolePolicy",
+      "iam:PassRole"
+    ],
+    "Resource": "arn:aws:iam::*:role/ask-*"
+  },
+  {
+    "Effect": "Allow",
+    "Action": [
+      "lambda:AddPermission",
+      "lambda:CreateFunction",
+      "lambda:GetFunction",
+      "lambda:UpdateFunctionCode",
+      "lambda:ListFunctions"
+    ],
+    "Resource": "arn:aws:lambda:*:*:function:ask-*"
+  },
+  {
+    "Effect": "Allow",
+    "Action": [
+      "logs:FilterLogEvents",
+      "logs:getLogEvents",
+      "logs:describeLogStreams"
+    ],
+    "Resource": "arn:aws:logs:*:*:log-group:/aws/lambda/ask-*"
+  }
+    ]
+  }
