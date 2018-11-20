@@ -1,0 +1,28 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Helsinki public transportation bus timetables",
+          "examplePhrases": [
+            "Alexa open bus driver",
+            "Alexa ask bus driver for timetables"
+          ],
+          "name": "Helsinki bus timetables",
+          "description": "Helsinki public transportation bus timetables"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
