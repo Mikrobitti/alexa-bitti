@@ -10,10 +10,8 @@ module.exports.getTimetable = async function () {
       stoptimesForPatterns {
         stoptimes {
           scheduledArrival
-          pickupType
           trip {
             route {
-              longName
               shortName
             }
           }
@@ -63,9 +61,9 @@ function convertToText(sortedTimeTableArray) {
   return returnString
 }
 
-function parseAndCalculate(returnedObject) {
+function parseAndCalculate(reponseJson) {
 
-  const scheduleArray = returnedObject.data.stops[0].stoptimesForPatterns
+  const scheduleArray = reponseJson.data.stops[0].stoptimesForPatterns
 
   const currentTime = currentTimeInSeconds()
   let timeTableArray = []
