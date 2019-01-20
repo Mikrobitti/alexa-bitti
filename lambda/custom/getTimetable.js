@@ -2,6 +2,8 @@ const fetch = require("node-fetch")
 
 module.exports.getTimetable = async function () {
 
+  // At the moment ask-cli cannot set environment variables to lambda. Setting time diffirence here instead.
+  const timeDifference = 7200
 
   const postData = `
   {
@@ -46,7 +48,7 @@ function timeDifference(currentTime, arrivalTime) {
 function currentTimeInSeconds() {
   const d = new Date(), e = new Date(d)
   const currentUtcTimeInSeconds = (e - d.setHours(0, 0, 0, 0)) / 1000
-  return currentUtcTimeInSeconds
+  return currentUtcTimeInSeconds + timeDifference
 }
 
 function mySort(a, b) {
