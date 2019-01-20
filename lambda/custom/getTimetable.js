@@ -49,7 +49,7 @@ function timeDifference(currentTime, arrivalTime) {
 function currentTimeInSeconds() {
   const d = new Date(), e = new Date(d)
   const currentUtcTimeInSeconds = (e - d.setHours(0, 0, 0, 0)) / 1000
-  return currentUtcTimeInSeconds + timeDifference
+  return currentUtcTimeInSeconds + timeDifferenceUTC2
 }
 
 function mySort(a, b) {
