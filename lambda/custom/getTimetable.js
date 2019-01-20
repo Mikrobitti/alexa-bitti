@@ -1,9 +1,10 @@
 const fetch = require("node-fetch")
 
+// At the moment ask-cli cannot set environment variables to lambda. Setting time diffirence here instead.
+const timeDifferenceUTC2 = 7200
+
 module.exports.getTimetable = async function () {
 
-  // At the moment ask-cli cannot set environment variables to lambda. Setting time diffirence here instead.
-  const timeDifference = 7200
 
   const postData = `
   {
