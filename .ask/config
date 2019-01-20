@@ -15,16 +15,17 @@
 				}
 			}
 		},
-		"resources": {},
-		"lambda": [{
-			"alexaUsage": [
-				"custom/default"
-			],
-			"awsRegion": "us-east-1",
-			"codeUri": "lambda/custom",
-			"functionName": "ask-custom-helsinki-bus-timetables-default",
-			"handler": "index.handler",
-			"runtime": "nodejs8.10"
-		}]
+		"resources": {
+			"lambda": [{
+				"alexaUsage": [
+					"custom/default"
+				],
+				"awsRegion": "us-east-1",
+				"codeUri": "lambda/custom",
+				"functionName": "ask-custom-helsinki-bus-timetables-default",
+				"handler": "index.handler",
+				"runtime": "nodejs8.10"
+			}]
+		}
 	}
 }
