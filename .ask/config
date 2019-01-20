@@ -8,11 +8,25 @@
           "apis": {
             "custom": {
               "endpoint": {
-                "uri": "ask-custom-helsinki-bus-timetable-default"
-              }
+                "uri": "ask-custom-helsinki-bus-timetable-default"              }
             }
           }
         }
+      },
+      "resources": {
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-helsinki-bus-timetables-default",
+            "handler": "index.handler",
+            "runtime": "nodejs8.10"
+          }
+        ]
       }
     }
   }
